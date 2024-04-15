@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Mũ Bảo Hiểm</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link tới tập tin CSS tùy chỉnh -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg bg-info-subtle">
+                <div class="container-fluid">
+                  <img src="https://royalhelmet.com.vn/ckfinder/userfiles/images/logo.png" width="50" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="productsMoTo.html">Sản phẩm mũ MOTO</a></li>
+                          <li><a class="dropdown-item" href="productsNonSon.html">Nón sơn</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dangnhap.html">Đăng nhập</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Dangki.html">Đăng kí</a>
+                          </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <body>
+       <!-- Form Đăng Ký -->
+    <div class="container mt-5"  >
+        <div class="row justify-content-center">
+            <div class="col-md-6" style="margin-top: 50px; margin-bottom: 50px;">
+                <div class="card">
+                    <div class="card-header">
+                        Đăng Ký
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <div class="mb-3">
+                                <label  class="form-label">Họ và Tên</label>
+                                <input type="text" class="form-control" id="exampleInputName">
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-label">Địa chỉ email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail">
+                                <div class="text-danger " id="emailer"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-label">Tên đăng nhập</label>
+                                <input type="text" class="form-control" id="exampleInputUserName">
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-label">Mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputPassword">
+                                <div class="text-danger " id="passworder"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label  class="form-label">Xác nhận mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputConfirmPassword">
+                                <div class="text-danger password" id="passworder1"></div>
+                            </div>
+                            <button type="submit" onclick="submit()" class="btn btn-primary">Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </body>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Hãy kết nối với chúng tôi trên các mạng xã hội:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Vai trò của mủ bảo hiểm
+                </h6>
+                <p>
+                    Mũ bảo hiểm đóng vai trò quan trọng trong việc bảo vệ đầu khỏi các tổn thương nghiêm trọng trong các tai nạn giao thông. Chúng giúp giảm thiểu nguy cơ chấn thương đầu và có thể cứu sống trong những tình huống nguy hiểm.
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Giới thiệu
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Thư từ người sáng lập</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Khách hàng</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Tuyển dụng</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Quỹ AIP</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Liên kết
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Tìm cửa hàng gần nhất</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Trở thành đại lý</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Câu hỏi thường gặp</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Chính sách bảo mật</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+                <p><i class="fas fa-home me-3"></i> 35/28 Lê Bình, Phường 4,Quận Tân Bình,TP Hồ Chí Minh </p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                    nguyentranlongtaman@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 093 1425 123</p>
+                <p><i class="fas fa-print me-3"></i> + 098 6271 567</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © Trang web bán mũ bảo hiểm:
+        <a class="text-reset fw-bold" href="index.html">Trangchu.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>
+        let username = document.getElementById("exampleInputUserName");
+        let email = document.getElementById("exampleInputEmail");
+        let password = document.getElementById("exampleInputPassword");
+        let cfpassword = document.getElementById("exampleInputConfirmPassword");
+
+let users = []
+
+function checkEmail(Value){
+    var pattern = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+    return pattern.test(Value);
+}
+
+function checkPassword(password) {
+    // Kiểm tra xem mật khẩu có chứa ít nhất một chữ cái viết hoa
+    var uppercaseRegex = /[A-Z]/;
+    // Kiểm tra xem mật khẩu có chứa ít nhất một ký tự đặc biệt
+    var specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    // Kiểm tra xem mật khẩu có chứa ít nhất một số
+    var digitRegex = /[0-9]/;
+
+    return uppercaseRegex.test(password) && specialCharRegex.test(password) && digitRegex.test(password);
+}
+
+function CheckCfPassword(pw, cfpw){
+    if (pw !== cfpw){
+        return false
+    }
+    return true
+}
+
+function submit(){
+    console.log("okeokeo", username.value, email.value, password.value, cfpassword.value)
+    let isCheck = true
+
+    if (!checkEmail(email.value)){
+        isCheck =false
+        document.getElementById('emailer').innerText = "Nhập email không hợp lệ"
+    }
+    if (!checkPassword(password.value)){
+        isCheck =false
+        document.getElementById('passworder').innerText = "Nhập password không hợp lệ"
+    }
+    if (!CheckCfPassword(password.value, cfpassword.value) && checkPassword(password.value)){
+        isCheck =false
+        document.getElementById('passworder1').innerText = "Nhập password với cfpassword không trùng"
+    }
+
+    if (isCheck){
+        console.log("oke")
+        localStorage.setItem('email', email.value)
+        localStorage.setItem('password', password.value)
+        window.location.href = "http://127.0.0.1:5500/html/Dangnhap.html"
+    }
+}
+    </script>
+    
+</body>
+</html>

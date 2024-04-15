@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Mũ Bảo Hiểm</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link tới tập tin CSS tùy chỉnh -->
+    <link rel="stylesheet" href="styles.css">
+     <!-- Link Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg bg-info-subtle">
+                <div class="container-fluid">
+                  <img src="https://royalhelmet.com.vn/ckfinder/userfiles/images/logo.png" width="50" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="productsMoTo.html">Sản phẩm mũ MOTO</a></li>
+                          <li><a class="dropdown-item" href="productsNonSon.html">Nón sơn</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dangnhap.html">Đăng nhập</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Dangki.html">Đăng kí</a>
+                          </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <body>
+        <!-- Form Đăng Nhập -->
+    
+    <section class="vh-100" style="margin: 100px;">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <div>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                  <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                  <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+      
+                  <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+      
+                  <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+      
+                
+      
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Enter a valid email address" />
+                  <label class="form-label" >Email address</label>
+                </div>
+      
+                <!-- Password input -->
+                <div data-mdb-input-init class="form-outline mb-3">
+                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Enter password" />
+                  <label class="form-label" >Password</label>
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label" for="form2Example3">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="#!" class="text-body">Forgot password?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg" onclick="login()"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                      class="link-danger">Register</a></p>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Hãy kết nối với chúng tôi trên các mạng xã hội:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Vai trò của mủ bảo hiểm
+                </h6>
+                <p>
+                    Mũ bảo hiểm đóng vai trò quan trọng trong việc bảo vệ đầu khỏi các tổn thương nghiêm trọng trong các tai nạn giao thông. Chúng giúp giảm thiểu nguy cơ chấn thương đầu và có thể cứu sống trong những tình huống nguy hiểm.
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Giới thiệu
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Thư từ người sáng lập</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Khách hàng</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Tuyển dụng</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Quỹ AIP</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Liên kết
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Tìm cửa hàng gần nhất</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Trở thành đại lý</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Câu hỏi thường gặp</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Chính sách bảo mật</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+                <p><i class="fas fa-home me-3"></i> 35/28 Lê Bình, Phường 4,Quận Tân Bình,TP Hồ Chí Minh </p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                    nguyentranlongtaman@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 093 1425 123</p>
+                <p><i class="fas fa-print me-3"></i> + 098 6271 567</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © Trang web bán mũ bảo hiểm:
+        <a class="text-reset fw-bold" href="index.html">Trangchu.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+   <script>
+        let email = document.getElementById("form3Example3");
+        let password = document.getElementById("form3Example4");
+
+        function login(){
+          const email_lg = localStorage.getItem('email')
+          console.log(email)
+          const password_lg = localStorage.getItem('password')
+          console.log(password)
+          if (email.value === email_lg && password.value===password_lg){
+            alert("Đăng nhập thành công")
+            window.location.href = "http://127.0.0.1:5500/html/index.html"
+          }else{
+            alert('Email hoặc tài khoản sai')
+          }
+        }
+   </script>
+    
+</body>
+</html>
